@@ -2,7 +2,7 @@
  
 // ==== Control Vars =======
 $strFromNumber = "+16093854774";
-$strToNumber = "+16093699533";
+$strToNumber = "+19292168151";
 $strMsg = "Hello from Bony Carvalho";  
 $aryResponse = array();
  
