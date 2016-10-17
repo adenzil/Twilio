@@ -2,7 +2,7 @@
  
 // ==== Control Vars =======
 $strFromNumber = "+16093854774";
-$strToNumber = "+19292168151";
+$strToNumber = "+918082195799";
 $strMsg = "Hello from Bony Carvalho";  
 $aryResponse = array();
  
@@ -12,8 +12,6 @@ $aryResponse = array();
     require_once ("inc/Services/Twilio.php");
  
     // set our AccountSid and AuthToken - from www.twilio.com/user/account
-    $AccountSid = "ACb9e36693e13255078834ea97d58c7fa4";
-    $AuthToken = "01a77d3b67d3bdc5810d3988296bdf5d";
  
     // ini a new Twilio Rest Client
     $objConnection = new Services_Twilio($AccountSid, $AuthToken);
@@ -31,5 +29,5 @@ $aryResponse = array();
     $aryResponse["SentMsg"] = $strMsg;
     $aryResponse["Success"] = true;
     
-    
+    print_r($bSuccess);
     echo json_encode($aryResponse);
